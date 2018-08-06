@@ -1,6 +1,5 @@
 <p>
-  Из {% if interpreter.slug == "js-node" %}массива(Array) целых чисел(Integer){% else %}множества(set) целых чисел(int){% endif %} вам нужно создать список(list) замкнутых интервалов в виде {% if interpreter.slug == "js-node" %}массивов(Arrays){% else %}кортежей(tuple){% endif %} таких,
-  чтобы интервалы охватывали все значения, найденные в множестве.<br>
+  Из множества(set) целых чисел(int) вам нужно создать список(list) замкнутых интервалов в виде кортежей(tuple) таких, чтобы интервалы охватывали все значения, найденные в множестве.<br>
 В этой миссии вам необходимо использовать 'yield', чтобы сделать вашу функцию генератором.
 </p>
 
@@ -18,25 +17,18 @@
 </p>
 
 <p>
-  <strong>Входящие данные:</strong> {% if interpreter.slug == "js-node" %}массив(Array) целых чисел(Integer){% else %}множество(set) целых чисел(int){% endif %}.
+  <strong>Входные данные:</strong> множество(set) целых чисел(int).
 </p>
 
 <p>
-  <strong>Исходящие:</strong> {% if interpreter.slug == "js-node" %}масссив массивов двух целых чисел(Array of Array of two Integers){% else %}список кортежей двух целых чисел(A list of tuples of two ints){% endif %}, обозначающими концы промежутка. Массив должен быть отсортирован по начальной точке каждого интервала.
+  <strong>Выходные данные:</strong> список кортежей двух целых чисел(A list of tuples of two ints), обозначающими концы промежутка. Массив должен быть отсортирован по начальной точке каждого интервала.
 </p>
 
 <div class="for_info_only">
   <p>
     <strong>Примеры:</strong>
   </p>
-{% if interpreter.slug == "js-node" %}
-<pre class="brush: python">
-createIntervals([1, 2, 3, 4, 5, 7, 8, 12]) == [[1, 5], [7, 8], [12, 12]]
-createIntervals([1, 2, 3, 6, 7, 8, 4, 5]) == [[1, 8]]</pre>
-</div>
-{% else %}
 <pre class="brush: python">
 create_intervals({1, 2, 3, 4, 5, 7, 8, 12}) == [(1, 5), (7, 8), (12, 12)]
 create_intervals({1, 2, 3, 6, 7, 8, 4, 5}) == [(1, 8)]</pre>
 </div>
-{% endif %}

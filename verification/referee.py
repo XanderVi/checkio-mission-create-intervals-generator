@@ -48,8 +48,7 @@ api.add_listener(
     CheckiOReferee(
         tests=TESTS,
         function_name={
-            "python": "create_intervals",
-            "js": "createIntervals"
+            "python": "create_intervals"
         },
         cover_code={
             'python-3': cover_code

@@ -1,6 +1,5 @@
 <p>
-  From a {% if interpreter.slug == "js-node" %}Array of Integers{% else %}set of ints{% endif %} you have to create a list of closed intervals as {% if interpreter.slug == "js-node" %}Arrays{% else %}tuples{% endif %}, so the
-  intervals are covering all the values found in the set.<br>
+  From a set of ints you have to create a list of closed intervals as tuples, so the intervals are covering all the values found in the set.<br>
 In this mission you should use the 'yield' to make your function a generator.
 </p>
 
@@ -19,26 +18,19 @@ In this mission you should use the 'yield' to make your function a generator.
 </p>
 
 <p>
-  <strong>Input:</strong> {% if interpreter.slug == "js-node" %}Array of Integers{% else %}A set of ints{% endif %}.
+  <strong>Input:</strong>A set of ints.
 </p>
 
 <p>
-  <strong>Output:</strong> {% if interpreter.slug == "js-node" %}Array of Array of two Integers{% else %}A list of tuples of two ints{% endif %}, indicating the endpoints of the interval. The Array should be sorted by start point of each interval
+  <strong>Output:</strong>A list of tuples of two ints, indicating the endpoints of the interval. The list should be sorted by start point of each interval.
 </p>
 
 <div class="for_info_only">
   <p>
     <strong>Examples:</strong>
   </p>
-{% if interpreter.slug == "js-node" %}
-<pre class="brush: python">
-createIntervals([1, 2, 3, 4, 5, 7, 8, 12]) == [[1, 5], [7, 8], [12, 12]]
-createIntervals([1, 2, 3, 6, 7, 8, 4, 5]) == [[1, 8]]</pre>
-</div>
-{% else %}
 <pre class="brush: python">
 create_intervals({1, 2, 3, 4, 5, 7, 8, 12}) == [(1, 5), (7, 8), (12, 12)]
 create_intervals({1, 2, 3, 6, 7, 8, 4, 5}) == [(1, 8)]</pre>
 </div>
-{% endif %}
 
