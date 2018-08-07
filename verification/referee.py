@@ -38,9 +38,8 @@ import types
 def cover(func, in_data):
     res = func(set(in_data))
     assert isinstance(res, types.GeneratorType), "your function should be a generator"
-    assert all([isinstance(item, tuple) for item in res]), "list of tuples should be returned"
     
-    return res
+    return list(res)
 '''
 
 api.add_listener(
