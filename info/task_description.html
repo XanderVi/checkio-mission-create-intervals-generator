@@ -5,15 +5,15 @@ In this mission you should use the 'yield' to make your function a generator.
 
 <p>
   A closed interval includes its endpoints! The interval <em>1..5</em>, for example,
-  includes each value <em>x</em> that satifies the condition
+  includes each value <em>x</em> that satisfies the condition
   <em>1&nbsp;<=&nbsp;x&nbsp;<=&nbsp;5</em>.
 </p>
 
 <p>
   Values can only be in the same interval if the difference between a value and the next
-  smaller value in the set equals one, otherwise a new interval begins. Of course, the
+  smaller value in a set equals one, otherwise a new interval begins. Of course, the
   start value of an interval is excluded from this rule.<br>
-  A single value, that does not fit into an existing interval becomes the start- and
+  A single value, that doesn’t fit into an existing interval becomes the start- and
   endpoint of a new interval.
 </p>
 
@@ -22,7 +22,7 @@ In this mission you should use the 'yield' to make your function a generator.
 </p>
 
 <p>
-  <strong>Output:</strong>A list of tuples of two ints, indicating the endpoints of the interval. The list should be sorted by start point of each interval.
+  <strong>Output:</strong>A list of tuples of two ints, indicating the endpoints of the interval. The list should be sorted by the start point of each interval.
 </p>
 
 <div class="for_info_only">
@@ -33,4 +33,5 @@ In this mission you should use the 'yield' to make your function a generator.
 create_intervals({1, 2, 3, 4, 5, 7, 8, 12}) == [(1, 5), (7, 8), (12, 12)]
 create_intervals({1, 2, 3, 6, 7, 8, 4, 5}) == [(1, 8)]</pre>
 </div>
+
 
